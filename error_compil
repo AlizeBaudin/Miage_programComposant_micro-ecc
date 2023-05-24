@@ -1,0 +1,12 @@
+Cependant, malgré le bon téléchargement, la bonne configuration, l'inclusion de la bibliothèque "pybind11" manuellement on a pour erreur : <br>
+
+cc  `python3-config --includes` -I ../pybind11/include  -c -o python_uECC.o python_uECC.c <br>
+In file included from ../pybind11/include/pybind11/detail/../attr.h:13, <br>
+                 from ../pybind11/include/pybind11/detail/class.h:12,<br>
+                 from ../pybind11/include/pybind11/pybind11.h:13, <br>
+                 from python_uECC.c:5: <br>
+../pybind11/include/pybind11/detail/../detail/common.h:303:10: fatal error: cstddef: No such file or directory <br>
+  303 | #include <cstddef> <br>
+      |          ^~~~~~~~~ <br>
+compilation terminated. <br>
+make: *** [<builtin>: python_uECC.o] Error 1 <br>
